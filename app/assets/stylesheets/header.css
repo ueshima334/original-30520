@@ -1,20 +1,15 @@
-.main-title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: relative;
-  color: #00a02e;
-  font-size: 30px;
-  padding: 1rem 0;
-	font-weight: 700;
-  letter-spacing: 3px;
-  color:black;
-  text-decoration: none;
-  }
-  
-.main-title:after {
-  display: block;
-  content: "";
-  height: 5px;
-  background: -moz-linear-gradient(to right, rgb(10, 350, 20), transparent);
-  background: -webkit-linear-gradient(to right, rgb(10, 350, 20), transparent);
-  background: linear-gradient(to right, rgb(10, 350, 20), transparent);
-  }
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.header-icon{
+  width: 70px;
+  height: 70px;
+}
+
+.header-title{
+  	font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
