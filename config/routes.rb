@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-root to: "posts#index"
+  devise_for :users
+root to: "users#index"
+resources :users,only:[:show]
+resources :rooms,only:[:index]
 end
