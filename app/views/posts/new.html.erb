@@ -17,9 +17,9 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, multiple: true, id:"photo-image" %>
+        <%= f.file_field :images, multiple: true, id:"photo-image" %>
       </div>
-
+      <div id="images-preview"></div>
        <div id="image-preview">
         <% @post.images.each do |image|%>
          <%= image_tag image.variant(resize: "100x100") %>
@@ -35,7 +35,7 @@
           テキスト
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :details, class:"photo-text", id:"photo-info", placeholder:"この画像について説明を書きましょう！" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :text, class:"photo-text", id:"photo-info", placeholder:"この画像について説明を書きましょう！" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
 

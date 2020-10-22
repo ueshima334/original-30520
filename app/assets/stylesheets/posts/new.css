@@ -85,6 +85,21 @@
   margin-bottom: 15px;
 }
 
+#images-preview{
+  display: flex;
+  margin-left: 10px;
+}
+
+.item-image{
+  margin-left: 10px;
+}
+
+.item-image__content--icon > img{
+  width: 120px;
+  height: 200px;
+  object-fit: contain;
+} 
+
 /* 商品名と商品説明 */
 .post-new-photo {
   padding: 2vh 0;
@@ -102,13 +117,6 @@
 .photo-explain {
   margin-top: 2vh;
 }
-
-#image-preview > img {
-  object-fit: contain;
-  width: 120px;
-  height: 200px; /*プレビュー画面の画像の大きさを指定 */
-  margin-left: 10px;
-} 
 
 /* /写真の説明 */
 
