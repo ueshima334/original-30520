@@ -5,7 +5,7 @@
     <h2 class="post-new-title">写真の情報を入力</h2>
     <%= form_with model: @post , local: true do |f| %>
 
-    <%# <%= render 'shared/error2_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: f.object %>
 
     <div class="img-upload">
       <div class="weight-bold-text">
