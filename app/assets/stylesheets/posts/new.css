@@ -84,7 +84,7 @@
 .click-upload>p {
   margin-bottom: 15px;
 }
-
+/* JS適用時に表示されるHTML------------ */
 #images-preview{
   display: flex;
   margin-left: 10px;
@@ -99,6 +99,11 @@
   height: 200px;
   object-fit: contain;
 } 
+
+.item-image__operation--delete{
+  text-align: center;
+  font-weight: bold;
+}
 
 /* 商品名と商品説明 */
 .post-new-photo {
