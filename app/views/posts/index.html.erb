@@ -1,0 +1,109 @@
+<%= render 'shared/header'%>
+
+<div class="post-contents">
+<%# タイトル部分------------- %>
+  <div class="post-title-main">
+    <div class="new-post">
+      <%= link_to image_tag("newphoto.jpg", class: "new-photo"),root_path %>
+    </div>
+    <div class="uma-contents-top">
+      <div class="uma-title">umastagram
+      </div>
+      <div class="uma-search">
+        <form method="get" action="#" class="search-btn">
+          <input type="text" size="25" placeholder="キーワード検索">
+          <input type="submit" value="🔍">
+        </form>
+      </div>
+    </div>
+    <div class="profile-img">
+    <%= link_to image_tag("典弘.jpg",class: 'post-prf-img'),user_path(current_user) %>
+    </div>
+  </div>
+  </div>
+      <%# 画像投稿部分------------ %>
+  <div class="uma-contents-bottom">
+    <div class="uma-content">
+      <div class="uma-content-top">
+        norihiro.yokoyama
+      </div>
+      <div class="uma-content-middle">
+        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
+      </div>
+      <div class="uma-content-bottom">
+        いいね 0
+      </div>
+      <div class="ume-comment">
+       戸崎: ええやん
+      </div>
+      <div class="ume-comment">
+       川田: やんのか？
+      </div>
+      <div class="ume-comment-details">
+        <p>詳細は画像をクリック</p>
+       </div>
+    </div>
+    <div class="uma-content">
+      <div class="uma-content-top">
+        norihiro.yokoyama
+      </div>
+      <div class="uma-content-middle">
+        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
+      </div>
+      <div class="uma-content-bottom">
+        いいね 0
+      </div>
+      <div class="ume-comment">
+       戸崎: ええやん
+      </div>
+      <div class="ume-comment">
+       川田: やんのか？
+      </div>
+      <div class="ume-comment-details">
+        <p>詳細は画像をクリック</p>
+       </div>
+    </div>
+    <div class="uma-content">
+      <div class="uma-content-top">
+        norihiro.yokoyama
+      </div>
+      <div class="uma-content-middle">
+        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
+      </div>
+      <div class="uma-content-bottom">
+        いいね 0
+      </div>
+      <div class="ume-comment">
+       戸崎: ええやん
+      </div>
+      <div class="ume-comment">
+       川田: やんのか？
+      </div>
+      <div class="ume-comment-details">
+        <p>詳細は画像をクリック</p>
+       </div>
+    </div>
+    <div class="uma-content">
+      <div class="uma-content-top">
+        norihiro.yokoyama
+      </div>
+      <div class="uma-content-middle">
+        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
+      </div>
+      <div class="uma-content-bottom">
+        いいね 0
+      </div>
+      <div class="ume-comment">
+       戸崎: ええやん
+      </div>
+      <div class="ume-comment">
+       川田: やんのか？
+      </div>
+      <div class="ume-comment-details">
+        <p>詳細は画像をクリック</p>
+       </div>
+    </div>
+  </div>
+  
+</div>
+</footer>
