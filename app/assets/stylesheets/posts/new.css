@@ -15,7 +15,7 @@
   background-color: #FFF;
   width: 70vw;
   min-width: 450px;
-  padding: 10vh 15vw;
+  padding: 10vh 10vw;
 }
 
 .post-new-title {
@@ -73,6 +73,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2vh 0;
+  flex-direction: column;
 }
 
 .click-upload {
@@ -101,6 +102,13 @@
 .photo-explain {
   margin-top: 2vh;
 }
+
+#image-preview > img {
+  object-fit: contain;
+  width: 120px;
+  height: 200px; /*プレビュー画面の画像の大きさを指定 */
+  margin-left: 10px;
+} 
 
 /* /写真の説明 */
 
