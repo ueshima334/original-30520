@@ -27,8 +27,6 @@
     </div> 
     </div>
 
-
-
     <div class="post-new-photo">
       <div class="photo-explain">
         <div class="weight-bold-text">
@@ -39,21 +37,7 @@
       </div>
     </div>
 
-    <div class="photo-detail">
-      <div class="weight-bold-text">写真の詳細</div>
-      <div class="form">
-        <div class="weight-bold-text">
-          カテゴリー
-          <span class="indispensable">必須</span>
-        </div>
-        <%# <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %> %>
-        <div class="weight-bold-text">
-          商品の状態
-          <span class="indispensable">必須</span>
-        </div>
-        <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %> %>
-      </div>
-    </div>
+
 
     <div class="post-btn-contents">
       <%= f.submit "投稿する" ,class:"post-btn" %>

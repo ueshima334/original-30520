@@ -18,7 +18,7 @@ $(function(){
 
       var num = $('.item-image').length + 1 + i
       fileReader.readAsDataURL(file);
-　　　 //画像が10枚になったら超えたらドロップボックスを削除する
+     //画像が5枚になったら超えたらドロップボックスを削除する
       if (num == 5){
         $('.click-upload').css('display', 'none')   
       }
@@ -74,6 +74,7 @@ $(function(){
 
     if(($('.item-image').length)=4){
       $('.click-upload').css('display', 'block')
+      //プレビューが削除され画像が4枚以下になった時file_fieldを復活させる
     }
   })
 });
