@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+
+<div class="item-show">
+  <div class="item-box">
+
+<% @post.images.each do |image|%>
+    <div class='item-img-content'>
+      <%= image_tag image ,class:"item-box-img" %>
+    </div>
+    <% break %><% end %>
+
+ <div class="edit-box">
+    <% if user_signed_in? %>
+    <%= link_to '編集', '#', method: :get, class: "edit-btn" %>
+    <%= link_to '削除', post_path(@post), method: :delete,data: { confirm: '削除しますか？' }, class:'destroy-btn' %>
+    <% end  %>
+  </div>
+
+    <div class="item-explain-box">
+      <span><%= @post.text %></span>
+    </div>
+       <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "heart.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>いいね 0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+  </div>

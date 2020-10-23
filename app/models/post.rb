@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
 
-  has_many_attached :images
+  has_many_attached :images,dependent: :destroy
   belongs_to :user
 
   validates :text,        presence: { message: 'を入力してください' }
