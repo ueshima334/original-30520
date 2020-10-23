@@ -23,13 +23,17 @@
   </div>
       <%# 画像投稿部分------------ %>
   <div class="uma-contents-bottom">
+    <% @posts.each do |post|%>
     <div class="uma-content">
       <div class="uma-content-top">
-        norihiro.yokoyama
+        <%= link_to post.user.nickname,user_path(post)%>
       </div>
+      <% post.images.each do |image|%>
       <div class="uma-content-middle">
-        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
+        <%= image_tag image ,class: "content-image" %>
       </div>
+      <% break %>
+      <% end %>
       <div class="uma-content-bottom">
         いいね 0
       </div>
@@ -42,68 +46,10 @@
       <div class="ume-comment-details">
         <p>詳細は画像をクリック</p>
        </div>
-    </div>
-    <div class="uma-content">
-      <div class="uma-content-top">
-        norihiro.yokoyama
-      </div>
-      <div class="uma-content-middle">
-        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
-      </div>
-      <div class="uma-content-bottom">
-        いいね 0
-      </div>
-      <div class="ume-comment">
-       戸崎: ええやん
-      </div>
-      <div class="ume-comment">
-       川田: やんのか？
-      </div>
-      <div class="ume-comment-details">
-        <p>詳細は画像をクリック</p>
-       </div>
-    </div>
-    <div class="uma-content">
-      <div class="uma-content-top">
-        norihiro.yokoyama
-      </div>
-      <div class="uma-content-middle">
-        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
-      </div>
-      <div class="uma-content-bottom">
-        いいね 0
-      </div>
-      <div class="ume-comment">
-       戸崎: ええやん
-      </div>
-      <div class="ume-comment">
-       川田: やんのか？
-      </div>
-      <div class="ume-comment-details">
-        <p>詳細は画像をクリック</p>
-       </div>
-    </div>
-    <div class="uma-content">
-      <div class="uma-content-top">
-        norihiro.yokoyama
-      </div>
-      <div class="uma-content-middle">
-        <%= image_tag "ダノンキングリー.png" ,class: "content-image" %>
-      </div>
-      <div class="uma-content-bottom">
-        いいね 0
-      </div>
-      <div class="ume-comment">
-       戸崎: ええやん
-      </div>
-      <div class="ume-comment">
-       川田: やんのか？
-      </div>
-      <div class="ume-comment-details">
-        <p>詳細は画像をクリック</p>
-       </div>
-    </div>
   </div>
+  <% end %>
+</div>
+
   
 </div>
 </footer>
