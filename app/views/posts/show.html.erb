@@ -21,13 +21,8 @@
      <b><%= link_to @post.user.nickname,user_path(@post.user) %></b><br>
       <span><%= @post.text %></span>
     </div>
-       <div class="option">
-      <div class="favorite-btn">
-        <%= image_tag "heart_kara.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <%= image_tag "heart_ari.png" ,class:"favorite-star-icon2" ,width:"20",height:"20"%>
-
-        <span>いいね 0</span>
-      </div>
+       <div id="favorite">
+      <%= render partial: "likes/like", locals: { post:@post } %>
     </div>
   </div>
 

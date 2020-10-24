@@ -5,5 +5,8 @@ resources :users,only:[:show]
 resources :rooms,only:[:index]
 resources :posts do
   resources :comments,only: :create
+  get '/likes',to: 'likes#create'
+  delete '/likes',to: 'likes#destroy'
+
 end
 end
