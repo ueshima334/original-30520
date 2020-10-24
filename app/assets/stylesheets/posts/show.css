@@ -9,6 +9,16 @@
   padding: 5vh 0;
 }
 
+.back-show-btn{
+  width: 100px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .item-box {
   background-color: #FFF;
   width: 70vw;
@@ -148,4 +158,27 @@
 .item-explain-box{
   height: 100px;
   margin: 20px 0 20px;
+}
+
+.comment-all{
+  display: flex;
+  background-color:#FFF;
+  width: 60vw;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.comment-all > h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.comment-user-name{
+  width: 100px;
+}
+
+.comment-one{
+  display: flex;
+  margin-bottom: 10px;
 }

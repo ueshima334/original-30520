@@ -26,7 +26,7 @@
     <% @posts.each do |post|%>
     <div class="uma-content">
       <div class="uma-content-top"><span></span>
-        <%= link_to post.user.nickname,user_path(post)%>
+        <%= link_to post.user.nickname,user_path(post),class:'post-user-name'%>
       </div>
       <% post.images.each do |image|%>
       <div class="uma-content-middle">
@@ -34,15 +34,18 @@
       </div>
       <% break %>
       <% end %>
-      <div class="uma-content-bottom">
-        いいね 0
-      </div>
+
+      <% num = 0%><% comments = post.comments%><% comments.order('created_at DESC').each do |comment|%><% num += 1 %>
       <div class="ume-comment">
-       戸崎: ええやん
+        <div class="comment-one" >
+        <b><%= link_to comment.user.nickname,user_path(comment.user),class:'comment-user-name' %></b>
+        <%= comment.text %>
+      </div>       
       </div>
-      <div class="ume-comment">
-       川田: やんのか？
-      </div>
+      <% if num ==2 %><% break%><% end %>
+      <% end %>
+
+
       <div class="ume-comment-details">
         <%= link_to '詳細は画像をクリック',post_path(post) %>
        </div>
