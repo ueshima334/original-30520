@@ -28,6 +28,12 @@
     </div>
   </div>
 
+  <div comment-all>
+    <% @comments.each do |comment|%>
+      <%= comment.text %>
+      <% end %>
+  </div>
+
   <div class="comment-box">
     <%= form_with model:[@post,@comment],local: true do |f| %>
       <%= f.text_field :text,class:"comment-text"%>
