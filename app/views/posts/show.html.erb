@@ -17,6 +17,7 @@
   </div>
 
     <div class="item-explain-box">
+     <b><%= link_to @post.user.nickname,user_path(@post.user) %></b><br>
       <span><%= @post.text %></span>
     </div>
        <div class="option">

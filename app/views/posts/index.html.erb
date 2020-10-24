@@ -25,7 +25,7 @@
   <div class="uma-contents-bottom">
     <% @posts.each do |post|%>
     <div class="uma-content">
-      <div class="uma-content-top">
+      <div class="uma-content-top"><span></span>
         <%= link_to post.user.nickname,user_path(post)%>
       </div>
       <% post.images.each do |image|%>
