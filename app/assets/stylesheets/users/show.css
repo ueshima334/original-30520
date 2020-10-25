@@ -30,17 +30,10 @@
   }
 
 .uma-title{
-  font-family: 'Brush Script MT',sans-serif;
-  font-size: 70px;
   text-align: center;
 }
 
-.uma-contents{
-  width: 700px;
-  margin: 0 auto;
-  border-right: solid 1px lightgray;
-  border-left: solid 1px lightgray;
-}
+
 /* 全体に関する部分----------- */
 .main{
   width: 800px;
