@@ -1,38 +1,10 @@
-.main-title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: relative;
-  color: #00a02e;
-  font-size: 30px;
-  padding: 1rem 0;
-	font-weight: 700;
-  letter-spacing: 3px;
-  color:black;
-  text-decoration: none;
-  }
-  
-.main-title:after {
-  display: block;
-  content: "";
-  height: 5px;
-  background: -moz-linear-gradient(to right, rgb(10, 350, 20), transparent);
-  background: -webkit-linear-gradient(to right, rgb(10, 350, 20), transparent);
-  background: linear-gradient(to right, rgb(10, 350, 20), transparent);
-  }
-
-.post-contents{
+/* タイトルと検索欄部分-------------- */
+.uma-main{
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-/* umastagramタイトル部分-------------- */
-.post-title-main{
-  display: flex;
-padding: 0 100px;
-align-items: center;
-margin-bottom: 50px;
+  padding: 0 100px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .new-photo{
@@ -42,29 +14,24 @@ margin-bottom: 50px;
   border: solid 3px skyblue;
 }
 
-.post-prf-img{
-  border-radius: 50%;
-  width:  100px;
-  height: 100px;
-}
-
-.uma-contents-top{
+.uma-top{
   display: flex;
-    padding: 0 30px 0;
+    padding: 0 60px 0;
     border: 3px solid #ccc;
     border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
     margin: 0 auto;
-    width: 700px;
+    width: 50vw;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
 .uma-title{
   font-family: 'Brush Script MT',sans-serif;
+  font-family: 'Brush Script MT',sans-serif;
+  width: 20vw;
   font-size: 70px;
 }
-
-.uma-search
 
 .search-btn{
   box-sizing: border-box;
@@ -99,11 +66,18 @@ margin-bottom: 50px;
 }
 
 /* 投稿された画像部分------------------ */
-.uma-contents-bottom{
+/* .uma-content-main{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+  width: 40vw;
+} */
+
+.uma-content-top{
+  border: solid 1px lightgray;
+}
+
+.uma-content-main{
+  width: 40vw;
+  border: solid 1px lightgray;
 }
 
 .post-user-name{
@@ -112,18 +86,17 @@ margin-bottom: 50px;
 }
 
 .content-image{
-  width: 400px;
-  height: 450px;
+  width: 100%;
   object-fit: contain;
 }
 
-.uma-content{
-  border: solid 1px lightgray;
-  margin: 0 0 30px 30px;
-  }
 
 .ume-comment{
-  margin-left: 10px;
+  padding: 10px;
+}
+
+.content-text{
+  margin-left: 20px;
 }
 
 .ume-comment-details{

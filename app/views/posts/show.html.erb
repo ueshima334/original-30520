@@ -27,7 +27,7 @@
   </div>
 
   <div class="comment-all"><h1>＜コメント一覧＞</h1>
-    <% @post.comments.each do |comment|%>
+    <% @comments.each do |comment|%>
     <div class="comment-one" >
       <b><%= link_to comment.user.nickname,user_path(comment.user),class:'comment-user-name' %></b>
       <%= comment.text %>

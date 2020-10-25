@@ -7,6 +7,8 @@ resources :posts do
   resources :comments,only: :create
   get '/likes',to: 'likes#create'
   delete '/likes',to: 'likes#destroy'
-
+  collection do
+    get 'search'
+  end
 end
 end
