@@ -11,7 +11,7 @@ class Post < ApplicationRecord
 
   def self.search(keyword)
     if keyword != ""
-      Post.where("text LIKE?", "#{keyword}") .includes(:user).order('created_at DESC')
+      Post.where("text LIKE?", "%#{keyword}%") .includes(:user).order('created_at DESC')
     else
       Post.all.includes(:user).order('created_at DESC')
     end 

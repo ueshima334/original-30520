@@ -14,6 +14,10 @@
   border: solid 3px skyblue;
 }
 
+.uma-top-top{
+  display: flex;
+}
+
 .uma-top{
   display: flex;
     padding: 0 60px 0;
@@ -63,6 +67,10 @@
   right: 0;
   top: -10px;
   outline : none;
+}
+
+.new-post{
+  margin-left: 30px;
 }
 
 /* 投稿された画像部分------------------ */
