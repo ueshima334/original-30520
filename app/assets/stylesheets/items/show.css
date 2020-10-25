@@ -9,16 +9,6 @@
   padding: 5vh 0;
 }
 
-.back-show-btn{
-  width: 100px;
-  font-size: 20px;
-  padding: 5px;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .item-box {
   background-color: #FFF;
   width: 70vw;
@@ -43,36 +33,49 @@
   object-fit: contain;
 }
 
-
-.or-text {
-  font-size: 20px;
-}
-
-/* 編集、削除ボタンの部分------------ */
-
-.edit-box{
+.item-price-box {
+  margin: 25px 0px;
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
 }
 
-.edit-btn {
+.item-price-box>.item-price {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.item-price-box>.item-postage {
+  font-size: 16px;
+}
+
+
+.item-red-btn {
   text-align: center;
   background-color: #ea352d;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
-  padding: 5px 20px;
+  margin: 20px 0px;
+  padding: 2vh 10vw;
 }
 
+.or-text {
+  font-size: 20px;
+}
 
-.destroy-btn {
+.item-destroy {
   background-color: lightgray;
   text-align: center;
   font-size: 24px;
   color: black;
-  padding: 5px 20px;
-  margin-left: 20px;
-  border-style: none;
+  margin: 20px 0px;
+  padding: 2vh 10vw;
+}
+
+.item-explain-box {
+  font-size: 18px;
+  margin: 40px 0px;
 }
 
 .detail-table {
@@ -113,6 +116,28 @@
   margin-right: 20px;
 }
 
+.favorite-star-icon {
+  margin-right: 5px;
+}
+
+.report-btn {
+  border-radius: 40px;
+  width: 15vw;
+  min-width: 200px;
+
+  padding: 1vh 0;
+  color: black;
+  border: 2px solid #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.report-flag-icon {
+  margin-right: 5px;
+}
+
+
 /* /商品の概要 */
 
 .comment-box {
@@ -128,6 +153,13 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+}
+
+.comment-warn {
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0px;
+  text-align: left;
 }
 
 .comment-btn {
@@ -151,31 +183,24 @@
   margin: 10px 5px 0 0;
 }
 
-.item-explain-box{
-  height: 100px;
-  margin: 20px 0 20px;
+.links {
+  display: flex;
+  justify-content: space-between;
   width: 50vw;
+
 }
 
-.comment-all{
-  display: flex;
-  background-color:#FFF;
-  width: 60vw;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
-  padding: 10px 20px;
+.change-item-btn {
+  font-size: 30px;
+  text-decoration: none;
+  color: #3CCACE;
 }
 
-.comment-all > h1 {
-  text-align: center;
+.another-item {
+  display: block;
+  margin: 30px 0px 8px;
+  color: #3CCACE;
+  text-decoration: none;
   font-weight: bold;
-}
-.comment-user-name{
-  width: 100px;
-}
-
-.comment-one{
-  display: flex;
-  margin-bottom: 10px;
+  font-size: 23px;
 }
